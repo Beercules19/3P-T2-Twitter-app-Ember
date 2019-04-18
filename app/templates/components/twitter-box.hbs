@@ -1,0 +1,15 @@
+<form action>
+	<input type="text" 
+		placeholder="What is happening?"
+		value={{this.text}} 
+		oninput={{ action this.handleChange value="target.value" }} 
+	>	
+	{{#if this.text}}
+		<button
+			{{ action this.handleSubmit }}
+		>
+			SUBMIT
+		</button>
+	{{/if}}
+	
+</form>
